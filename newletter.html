@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend pratice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/newletter.css" />
+  </head>
+  <body>
+    <!-- header start -->
+
+    <header>
+      <!-- header section start -->
+      <section>
+        <div class="header">
+          <div class="header-section header-flex">
+            <div class="header-logo primary-font-family-w600">
+              <a href="#" class="a"> Forntend Pratice</a>
+            </div>
+            <div class="header-icon">
+              <ul class="header-section-icon secondary-font-family-w600 a">
+                <li><a href="index.html" class="a">Home</a></li>
+                <li><a href="project.html" class="a">Projects</a></li>
+                <li><a href="faq.html" class="a">FAQ</a></li>
+                <li><a href="newletter.html" class="a">New Letter</a></li>
+                <li><a href="contact.html" class="a">Contact</a></li>
+              </ul>
+            </div>
+            <div class="responsive">
+              <button>
+                <i class="bi bi-list" id="button"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- header section end  -->
+    </header>
+
+    <!-- header end  -->
+
+    <!-- main start -->
+    <main>
+      <!-- main section start  -->
+      <section>
+        <div class="main-section">
+          <div class="main-image">
+            <img src="./image/photo6.webp" alt="" />
+          </div>
+          <div class="main-caption">
+            <h1>Frontend Practice Newsletter</h1>
+            <p>
+              Get the latest Frontend Practice updates and recommendations for
+              websites, articles, and videos worth checking out. Stay informed
+              and inspired with us.
+            </p>
+            <h5>Launched a month ago</h5>
+            <div class="main-form">
+              <input type="email " placeholder="Type Your Email" />
+              <a href="#">Subscribe</a>
+            </div>
+            <h3>No Thanks</h3>
+          </div>
+        </div>
+      </section>
+      <!-- main section end  -->
+    </main>
+    <!-- main end   -->
+
+    <!-- javascript start -->
+
+    <script>
+      let button = document.querySelector("#button");
+      let headericon = document.querySelector(".header-icon");
+      button.onclick = () => {
+        headericon.classList.toggle("show");
+        // console.log("hello");
+      };
+    </script>
+
+    <!-- javascript end  -->
+  </body>
+</html>

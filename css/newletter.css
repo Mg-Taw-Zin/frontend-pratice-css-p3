@@ -1,0 +1,84 @@
+:root {
+  --font-family: "SF Compact Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.main-section {
+  width: 50%;
+  margin: 100px auto;
+}
+.main-image img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.main-caption {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.main-caption h1 {
+  font-family: var(--font-family);
+  font-size: 24px;
+  lighting-color: 28px;
+  font-weight: 700;
+  color: #404040;
+}
+.main-caption p {
+  text-align: center;
+  margin: 15px 0;
+  color: #757575;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: var(--font-family);
+}
+.main-caption h5 {
+  color: #757575;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.main-form input {
+  margin: 0;
+}
+.main-form :nth-child(1) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404040;
+  padding: 10px;
+  width: 65%;
+}
+.main-form :nth-child(2) {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.main-caption h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+  margin: 20px 0;
+}
+@media (max-width: 1020px) {
+  .main-section {
+    width: 80%;
+    margin: 100px auto;
+  }
+  .main-caption {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

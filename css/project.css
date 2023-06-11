@@ -46,8 +46,7 @@
   width: 25%;
 }
 .second-section {
-  display: flex;
-  justify-content: space-between;
+  columns: 4;
   width: 95%;
   margin: 20px auto;
   gap: 20px;
@@ -56,7 +55,7 @@
   width: 100%;
   position: relative;
   border: 2px solid black;
-  padding-bottom: 20px;
+  padding: 10px;
   transition: 1s;
 }
 .card:hover {
@@ -64,8 +63,8 @@
 }
 .card h1 {
   position: absolute;
-  right: -10px;
-  top: -10px;
+  right: 0px;
+  top: 0px;
   background-color: yellow;
   border: 2px solid black;
 }
@@ -75,7 +74,7 @@
   object-fit: cover;
   object-position: top top;
   border-bottom: 2px solid black;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .card a {
   font-size: 24px;
@@ -83,7 +82,7 @@
   font-family: "DM Serif Display", serif;
   font-weight: 600;
   color: #333;
-  margin-left: 20px;
+  margin: 0px 20px;
 }
 
 @media (max-width: 1020px) {
@@ -110,12 +109,23 @@
     width: 80%;
   }
   .second-section {
-    column-count: 1;
+    column-count: 2;
+    margin: 0px auto;
     width: 95%;
-    margin: 20px auto;
-    gap: 20px;
   }
   .card {
-    margin: 20px 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .card:hover {
+    transform: translatey(-2%);
+  }
+}
+@media (max-width: 620px) {
+  .second-section {
+    columns: 1;
+  }
+  .card {
+    margin: 10px auto;
   }
 }

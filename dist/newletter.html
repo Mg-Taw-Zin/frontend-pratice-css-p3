@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend pratice</title>
+
+    <!-- css start -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/newletter.css" />
+
+    <!-- css end -->
+  </head>
+  <body>
+    <!-- header start -->
+
+    <header>
+      <!-- header section start -->
+
+      <section>
+        <div class="header">
+          <div class="header-section header-flex">
+            <div class="header-logo primary-font-family-w600">
+              <a href="#" class="a a-hover"> Forntend Pratice</a>
+            </div>
+            <div class="header-icon">
+              <ul class="header-section-icon secondary-font-family-w600">
+                <li><a href="index.html" class="a a-hover">Home</a></li>
+                <li><a href="project.html" class="a a-hover">Projects</a></li>
+                <li><a href="faq.html" class="a a-hover">FAQ</a></li>
+                <li>
+                  <a href="newletter.html" class="a a-hover">New Letter</a>
+                </li>
+                <li><a href="contact.html" class="a a-hover">Contact</a></li>
+              </ul>
+            </div>
+            <div class="responsive">
+              <button>
+                <i class="bi bi-list" id="button"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- header section end  -->
+    </header>
+
+    <!-- header end  -->
+
+    <!-- main start -->
+
+    <main>
+      <!-- main section start  -->
+
+      <section>
+        <div class="main-section">
+          <div class="main-image">
+            <img src="./image/photo6.webp" alt="" />
+          </div>
+          <div class="main-caption">
+            <h1>Frontend Practice Newsletter</h1>
+            <p>
+              Get the latest Frontend Practice updates and recommendations for
+              websites, articles, and videos worth checking out. Stay informed
+              and inspired with us.
+            </p>
+            <h5>Launched a month ago</h5>
+            <div class="main-form">
+              <input type="email " placeholder="Type Your Email" />
+              <a href="contact.html">Subscribe</a>
+            </div>
+            <div class="main-a">
+              <a href="index.html">No Thanks</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main section end  -->
+    </main>
+
+    <!-- main end   -->
+
+    <!-- footer start -->
+
+    <footer>
+      <!-- footer section start -->
+
+      <section>
+        <div class="footer-section">
+          <div class="footer-section-text">
+            <h1 class="secondary-font-family-w400">
+              Frontend Practice - © 2023
+            </h1>
+            <div class="footer-section-icon">
+              <a href="index.html" class="a a-hover secondary-font-family-w600"
+                >Home</a
+              >
+              <a
+                href="project.html"
+                class="a a-hover secondary-font-family-w600"
+                >Projects</a
+              >
+              <a href="faq.html" class="a a-hover secondary-font-family-w600"
+                >FAQ</a
+              >
+              <a
+                href="newletter.html"
+                class="a a-hover secondary-font-family-w600"
+                >News Letter</a
+              >
+              <a
+                href="contact.html"
+                class="a a-hover secondary-font-family-w600"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section end -->
+    </footer>
+
+    <!-- footer end  -->
+
+    <!-- javascript start -->
+
+    <script>
+      let button = document.querySelector("#button");
+      let headericon = document.querySelector(".header-icon");
+      button.onclick = () => {
+        headericon.classList.toggle("show");
+        // console.log("hello");
+      };
+    </script>
+
+    <!-- javascript end  -->
+  </body>
+</html>
